@@ -1,7 +1,7 @@
-name: flutter_vlc_player
+name: lykluk_vlc_player
 description: A VLC-powered alternative to Flutter's video_player. Supports multiple players on one screen.
 version: 7.2.0
-homepage: https://github.com/solid-software/flutter_vlc_player/
+homepage: https://github.com/fegolykluk/lykluk_vlc_player
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
