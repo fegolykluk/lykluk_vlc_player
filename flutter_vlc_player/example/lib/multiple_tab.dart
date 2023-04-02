@@ -15,7 +15,6 @@ class _MultipleTabState extends State<MultipleTab> {
     'https://www.tomandjerryonline.com/Videos/TomAndJerryTales_HQ.wmv',
     'https://www.tomandjerryonline.com/Videos/tjpb1.mov'
   ];
-
   bool showPlayerControls = true;
 
   @override
@@ -26,7 +25,7 @@ class _MultipleTabState extends State<MultipleTab> {
       var controller = VlcPlayerController.network(
         urls[i],
         hwAcc: HwAcc.full,
-        autoPlay: false,
+        autoPlay: true,
         options: VlcPlayerOptions(
           advanced: VlcAdvancedOptions([
             VlcAdvancedOptions.networkCaching(2000),
@@ -43,11 +42,9 @@ class _MultipleTabState extends State<MultipleTab> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: ListView.separated(
+      child: PageView.builder(
         itemCount: controllers.length,
-        separatorBuilder: (_, index) {
-          return Divider(height: 5, thickness: 5, color: Colors.grey);
-        },
+        scrollDirection: Axis.vertical,
         itemBuilder: (_, index) {
           return Container(
             height: showPlayerControls ? 400 : 300,
