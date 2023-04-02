@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
   A VLC-powered alternative to Flutter video_player. Supports multiple players on one screen.
                        DESC
-  s.homepage         = 'https://github.com/solid-software/flutter_vlc_player'
+  s.homepage         = 'https://github.com/fegolykluk/lykluk_vlc_player'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'email@example.com' }
   s.source           = { :path => '.' }
