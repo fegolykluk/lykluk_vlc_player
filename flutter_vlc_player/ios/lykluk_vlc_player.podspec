@@ -3,7 +3,7 @@
 # Run `pod lib lint flutter_vlc_player.podspec' to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'flutter_vlc_player'
+  s.name             = 'lykluk_vlc_player'
   s.version          = '3.0.3'
   s.summary          = 'A new flutter plugin project.'
   s.description      = <<-DESC
